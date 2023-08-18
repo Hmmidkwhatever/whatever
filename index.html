@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto+Serif&family=Zeyada&display=swap" rel="stylesheet">
+    <title>Love Conversation</title>
+    <style>
+
+        body {
+            font-family: 'Dancing Script', cursive;
+font-family: 'Roboto Serif', serif;
+font-family: 'Zeyada', cursive;
+            background-image: url("https://img.freepik.com/free-vector/blurred-valentine-s-day-wallpaper_23-2148819570.jpg?w=2000");
+            margin: 30px;
+            padding: 0;
+			font-size: 1.8em;
+			font-weight: 800;
+        }
+        .container {
+
+            margin: 0 auto;
+            padding: 20px;
+           
+        }
+        .message {
+            background-color: #fefefe;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .message:hover {
+            
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+		.message k:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            text-decoration: none;
+		}
+		.a:hover{
+			background-image: url("https://thumbs.gfycat.com/AlienatedDazzlingGalapagospenguin-size_restricted.gif");
+		}
+		.k:hover{
+			background-image: url("https://thumbs.gfycat.com/AlienatedDazzlingGalapagospenguin-size_restricted.gif");
+			
+		}
+        .sender-a {
+            color: #ff0066;
+            background-color: #ffccff; /* Pink highlight color for sender A */
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
+        .sender-k {
+            color: #0077cc;
+            background-color: #ccf4ff; /* Blue highlight color for sender K */
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
+        .love-easter-egg {
+            font-size: 0.8em;
+            color: #ff0066;
+            font-style: italic;
+            display: none;
+            transition: opacity 0.3s ease;
+            margin-top: 10px;
+        }
+        .message:hover .love-easter-egg {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="passwordPrompt" style="display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 9999;">
+        <div style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <h2 style="margin-bottom: 10px;">Enter Password to Access Content</h2>
+            <input type="password" id="passwordInput" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            <button id="submitButton" style="padding: 10px 20px; margin-top: 10px;">Submit</button>
+        </div>
+    </div>
+    <div class="container" id="contentContainer" style="display: none;">
+		<div class="message a">
+	
+            <span class="sender-a">A :</span> i love you
+        </div>
+        <div class="message k">
+            <span class="sender-k">K :</span> in your I love you, a universe takes form, my heart, forever yours, in calm and in storm.
+        </div>
+        <div class="message a">
+            <span class="sender-a">A :</span> with K in my heart, empty spaces are filled, you make me feel so loved, so happy and thrilled
+        </div>
+        <div class="message k">
+            <span class="sender-k">K :</span> in this symphony of emotions, our souls intertwine, with each shared heartbeat, a love story divine.
+        </div>
+        <div class="message a">
+            <span class="sender-a">A :</span> and in this heat of passion, our bodies collide, with each shared movement, we rock the bedside
+        </div>
+        <div class="message k">
+            <span class="sender-k">K :</span> in our togetherness, a love profoundly true, beyond the physical, our souls intertwine and grew.
+        </div>
+        <div class="message a">
+            <span class="sender-a">A :</span> and when we are apart, our love roots deeper, with each night away, i've realized you're a keeper
+        </div>
+        <div class="message k">
+            <span class="sender-k">K :</span> distance makes my heart grow fonder, it's true, come september 6th, I'll be closer to you.
+        </div>
+        <div class="message a">
+            <span class="sender-a">A :</span> day and night i want you more, it's true, on september 6th, it'll just be us two
+        </div>
+        <div class="message k">
+            <span class="sender-k">K :</span> in the miles that stretch, your absence is keen, ive come to realise youre the light in my scene.  closer to you, i yearn to reside, with each passing day, this truth I cant hide.
+        </div>
+        <div class="message a">
+            <span class="sender-a">A :</span> in the provinces between, my missing of you had been seen, you are the only character on my whole screen.
+            farther away from you, my mind is not awake, with each day away, my body and soul aches
+        </div>
+        <div class="message k">
+            <span class="sender-k">K :</span> sharing the same sentiment, my heart echoes your song, counting down days till september 6, where we truly belong.
+        </div>
+        <div class="message a">
+            <span class="sender-a">A :</span> hearing your thoughts and emotions, my blood is heated at high, marking this sepetember 6th, when i'll finally meet my best guy.
+            though the days seem long, i know we'll both come through, once i'm back in toronto, once again i am with you.
+        </div>
+    </div>
+    
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const submitButton = document.getElementById('submitButton');
+        const passwordPrompt = document.getElementById('passwordPrompt');
+        const contentContainer = document.getElementById('contentContainer');
+
+        submitButton.addEventListener('click', () => {
+            const enteredPassword = passwordInput.value;
+            const correctPassword = 'helloworldIamgreatperson';
+            
+            if (enteredPassword === correctPassword) {
+                passwordPrompt.style.display = 'none';
+                contentContainer.style.display = 'block';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
